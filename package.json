@@ -4,15 +4,16 @@
     "url": "https://github.com/bhigginsuk/discord-activity-monitor/issues"
   },
   "dependencies": {
-    "@hapi/joi": "^15.1.0",
+    "@hapi/joi": "^15.1.1",
     "@types/hapi__joi": "^15.0.3",
     "@types/node": "^11.13.0",
-    "disharmony": "git+https://github.com/bhigginsuk/disharmony.git#v2.0.8",
+    "disharmony": "^2.0.8",
     "typescript": "^3.9.7"
   },
   "description": "Discord bot to add/remove roles based on user activity",
   "devDependencies": {
     "alsatian": "^2.4.0",
+    "snyk": "^1.827.0",
     "tslint": "^5.16.0",
     "typemoq": "^2.1.0"
   },
@@ -35,7 +36,7 @@
     "full-start": "npm ci && npm run build && npm start",
     "lint": "./node_modules/.bin/tslint --project .",
     "start": "node ./dist/index.js --name activity-monitor",
-    "test": "node --stack-trace-limit=1 ./test-runner.js"
+    "test": "snyk test && node --stack-trace-limit=1 ./test-runner.js"
   },
   "types": "dist/index.d.ts",
   "version": "4.2.2"
