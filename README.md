@@ -1,10 +1,14 @@
 ![Build status](https://github.com/bhigginsuk/discord-activity-monitor/actions/workflows/validate.yml/badge.svg?branch=master)
 
-**I am no longer maintaining this project. It should continue to work just fine, but if it breaks I won't be interested in fixing it.**  
-You are welcome to fork and update the code yourself. I'm happy to answer any questions you may have in this regard.
+**Original Project: [brhigginsuk/discord-activity-monitor](https://github.com/brhigginsuk/discord-activity-monitor)**
+
+**SECURITY NOTICE: THIS BRANCH IS VULNERABLE TO SEVERAL UNRESOLVABLE PROTOTYPE POLLUTION AND COMMAND INJECTION VULNERABILITIES. 
+MYSELF, NOR THE ORIGINAL CREATOR TAKE RESPONSIBILITY IF YOU DECIDE TO USE AN INSECURE VERSION OF THIS PROJECT.**
+
+I am in the process of recoding this bot to ensure security, so please be patient, and if you need to use it, run it inside an isolated container.
 
 # Discord Activity Monitor
-A Discord bot to assign/remove a role from users in your guild based on whether or not they have been active lately.
+A Discord bot to assign/remove a role from users in your guild based on whether they have been active lately.
 
 ## Features
 - Remove an 'active' role from a user who has not been active for a number of days
